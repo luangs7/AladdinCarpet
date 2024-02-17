@@ -18,16 +18,11 @@ Ao clicar em "Consultar Histórico", é possível ver uma listagem de orçamento
 
 ## Capturas de Tela
 
-[Inserir capturas de tela aqui, se aplicável]
-
-## Instalação
-
-[Instruções de instalação aqui, se aplicável]
+[Home](https://github.com/luangs7/AladdinCarpet/blob/main/screenshots/home.png?raw=true)
+[Simulate](https://github.com/luangs7/AladdinCarpet/blob/main/screenshots/simulate.png?raw=true)
+[History](https://github.com/luangs7/AladdinCarpet/blob/main/screenshots/history.png?raw=true)
 
 ## Contribuindo
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-## Licença
-
-[Inserir licença aqui, se aplicável]
