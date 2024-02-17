@@ -10,7 +10,9 @@ abstract class CarpetBudgetUseCase {
 class CarpetBudgetUseCaseImpl extends CarpetBudgetUseCase {
   @override
   Future<double> execute(Carpet carpet, double side1, double? side2) async {
-    return getAreaFromShape(getShapeFromString(carpet.name), side1, side2);
+    final area =
+        getAreaFromShape(getShapeFromString(carpet.name), side1, side2);
+    return area * carpet.valorM2;
   }
 
   double getAreaFromShape(Shape shape, double side1, double? side2) {
