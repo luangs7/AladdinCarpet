@@ -1,16 +1,17 @@
-# alladin
+# Tabela de Preços de Tapetes
 
-A new Flutter project.
+Este aplicativo permite visualizar os preços atualizados do metro quadrado (m²) de tapetes, com base na forma requerida. Além disso, oferece funcionalidades para fazer orçamentos e consultar o histórico de orçamentos salvos.
 
-## Getting Started
+## Tela Inicial
 
-This project is a starting point for a Flutter application.
+Na tela inicial, você pode ver uma tabela com os preços atualizados do metro quadrado (m²) do tapete, baseando na forma requerida.
 
-A few resources to get you started if this is your first Flutter project:
+## Funcionalidades
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Fazer Orçamento
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Ao clicar em "Fazer Orçamento", uma tela é mostrada com as opções de formato de tapete, e os campos para preenchimento de altura, largura e raio. Ao serem preenchidos corretamente, o valor total é exibido e o botão de salvar é habilitado.
+
+### Consultar Histórico
+
+Ao clicar em "Consultar Histórico", é possível ver uma listagem de
