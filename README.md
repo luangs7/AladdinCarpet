@@ -14,4 +14,20 @@ Ao clicar em "Fazer Orçamento", uma tela é mostrada com as opções de formato
 
 ### Consultar Histórico
 
-Ao clicar em "Consultar Histórico", é possível ver uma listagem de
+Ao clicar em "Consultar Histórico", é possível ver uma listagem de orçamentos salvos com seus dados e seu valor total.
+
+## Capturas de Tela
+
+[Inserir capturas de tela aqui, se aplicável]
+
+## Instalação
+
+[Instruções de instalação aqui, se aplicável]
+
+## Contribuindo
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
+
+## Licença
+
+[Inserir licença aqui, se aplicável]
