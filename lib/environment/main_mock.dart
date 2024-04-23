@@ -6,7 +6,9 @@ import 'package:alladin/main.dart';
 void main() {
   FlavorConfig.initialize(
     flavor: Flavor.mock,
-    values: const FlavorValues(apiBaseUrl: "", showLogs: true),
+    values: const FlavorValues(
+        apiBaseUrl: "https://testedefensoriapr.pythonanywhere.com/",
+        showLogs: false),
   );
 
   startApp();
