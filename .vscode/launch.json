@@ -18,7 +18,6 @@
             "name": "Alladin (release mode)",
             "request": "launch",
             "type": "dart",
-            "flutterMode": "release",
             "program": "lib/core/environment/main_prod.dart",
             "args": [
                 "--flavor",
