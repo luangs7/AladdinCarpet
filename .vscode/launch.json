@@ -5,21 +5,25 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "AladdinCarpet",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "AladdinCarpet (profile mode)",
+            "name": "Alladin mock",
             "request": "launch",
             "type": "dart",
-            "flutterMode": "profile"
+            "program": "lib/core/environment/main_mock.dart",
+            "args": [
+                "--flavor",
+                "mock" //development or staging or production
+            ]
         },
         {
-            "name": "AladdinCarpet (release mode)",
+            "name": "Alladin (release mode)",
             "request": "launch",
             "type": "dart",
-            "flutterMode": "release"
+            "flutterMode": "release",
+            "program": "lib/core/environment/main_prod.dart",
+            "args": [
+                "--flavor",
+                "prod" //development or staging or production
+            ]
         }
     ]
 }

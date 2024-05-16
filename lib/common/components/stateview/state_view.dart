@@ -5,8 +5,9 @@ class StateView extends StatelessWidget {
   final String? url;
   final double? size;
   final String? message;
+  final Widget? retry;
 
-  const StateView({super.key, this.url, this.size, this.message});
+  const StateView({super.key, this.url, this.size, this.message, this.retry});
 
   @override
   Widget build(BuildContext context) {
@@ -28,8 +29,16 @@ class StateView extends StatelessWidget {
                   textAlign: TextAlign.center,
                 ),
               )
-            : const Center()
+            : const Center(),
+        if (retry != null) _buildRetryButton()
       ],
+    );
+  }
+
+  Widget _buildRetryButton() {
+    return Padding(
+      padding: const EdgeInsets.only(top: 16),
+      child: retry,
     );
   }
 }

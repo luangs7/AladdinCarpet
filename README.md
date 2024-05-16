@@ -31,3 +31,7 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou env
 ## Licença
 
 [Inserir licença aqui, se aplicável]
+
+## Melhorias
+-   Extrair Strings para uma classe separada.
+-   AppLocalizations para deixar o app com multi linguagens.

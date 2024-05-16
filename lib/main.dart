@@ -3,7 +3,7 @@ import 'package:alladin/common/viewevent/view_event.dart';
 import 'package:alladin/data/local/di/local_module.dart';
 import 'package:alladin/data/remote/di/remote_module.dart';
 import 'package:alladin/data/respository/di/repository_module.dart';
-import 'package:alladin/di/global_providers.dart';
+import 'package:alladin/core/di/global_providers.dart';
 import 'package:alladin/domain/di/domain_module.dart';
 import 'package:alladin/presentation/history/view/history_view.dart';
 import 'package:alladin/presentation/home/provider/home_cubit.dart';
