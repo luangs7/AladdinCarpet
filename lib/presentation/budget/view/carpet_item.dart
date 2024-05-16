@@ -7,7 +7,8 @@ class CarpetItem extends StatelessWidget {
   final Function(Carpet) onSelected;
 
   const CarpetItem(
-      {required this.carpet,
+      {super.key,
+      required this.carpet,
       required this.selectedShape,
       required this.onSelected});
 

@@ -43,18 +43,20 @@ class MyApp extends StatelessWidget {
             future: GetIt.instance.allReady(),
             builder: (context, snapshot) {
               if (snapshot.hasData) {
-                return BaseView(child: MyHomePage());
+                return const BaseView(child: MyHomePage());
               } else {
                 return const Center(child: CircularProgressIndicator());
               }
             }),
-        '/history': (context) => BaseView(child: HistoryView()),
+        '/history': (context) => const BaseView(child: HistoryView()),
       },
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key});
+
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }

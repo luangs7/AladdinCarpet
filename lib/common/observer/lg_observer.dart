@@ -13,11 +13,11 @@ class LGObserver<T> extends Subject<T> {
 
   @override
   void notify() {
-    observers.forEach((element) {
-       if (data != null) {
-          element.update(data as T);
-        }
-    });
+    for (var element in observers) {
+      if (data != null) {
+        element.update(data as T);
+      }
+    }
   }
 
   @override
@@ -29,5 +29,4 @@ class LGObserver<T> extends Subject<T> {
   void removeObserver(Observer<T> o) {
     observers.remove(o);
   }
-  
 }

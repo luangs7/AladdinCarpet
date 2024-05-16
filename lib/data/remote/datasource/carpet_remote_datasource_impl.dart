@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:alladin/data/remote/mapper/carpet_remote_mapper.dart';
 import 'package:alladin/data/remote/service/carpet_service.dart';
 import 'package:alladin/data/respository/datasource/carpet_remote_datasource.dart';

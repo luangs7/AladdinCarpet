@@ -1,6 +1,5 @@
 import 'package:alladin/common/components/button/custom_button.dart';
 import 'package:alladin/presentation/budget/view/budget_simulate_view.dart';
-import 'package:alladin/presentation/history/view/history_view.dart';
 import 'package:alladin/presentation/home/states/home_states.dart';
 import 'package:alladin/presentation/home/view/carpet_prices.dart';
 import 'package:flutter/material.dart';
@@ -8,7 +7,7 @@ import 'package:lottie/lottie.dart';
 
 class CarpetContent extends StatefulWidget {
   final HomeLoadedEvent event;
-  const CarpetContent(this.event);
+  const CarpetContent(this.event, {super.key});
 
   @override
   State<StatefulWidget> createState() => CarpetContentState();

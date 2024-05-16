@@ -11,7 +11,7 @@ class BaseView extends StatelessWidget {
         resizeToAvoidBottomInset: true,
         appBar: AppBar(
           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-          title: Text("Aladdin Carpet Store"),
+          title: const Text("Aladdin Carpet Store"),
         ),
         body: Center(
           child: child,

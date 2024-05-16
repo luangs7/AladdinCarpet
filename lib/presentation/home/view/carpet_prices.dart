@@ -22,8 +22,7 @@ class CarpetPrices extends StatefulWidget {
 class _CarpetPricesState extends State<CarpetPrices> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-        child: DataTable(
+    return DataTable(
       columns: const [
         DataColumn(label: Text("Nome")),
         DataColumn(label: Text("Valor(m2)"))
@@ -34,6 +33,6 @@ class _CarpetPricesState extends State<CarpetPrices> {
                 DataCell(Text(e.valorM2.toString()))
               ]))
           .toList(),
-    ));
+    );
   }
 }
