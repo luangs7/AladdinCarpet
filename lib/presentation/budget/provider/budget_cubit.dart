@@ -5,11 +5,16 @@ import 'package:alladin/domain/model/shape.dart';
 import 'package:alladin/domain/usecase/carpet_budget_save_usecase.dart';
 import 'package:alladin/domain/usecase/carpet_budget_usecase.dart';
 import 'package:alladin/presentation/budget/states/budget_states.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class BudgetCubit extends Cubit<ViewEvent> {
   final SaveCarpetBudgetUseCase saveUseCase;
   final CarpetBudgetUseCase budgetUseCase;
+
+  static BudgetCubit get(BuildContext context) => context.watch<BudgetCubit>();
+
+  static BudgetCubit read(BuildContext context) => context.read<BudgetCubit>();
 
   BudgetCubit({required this.saveUseCase, required this.budgetUseCase})
       : super(BudgetEmptyView());
@@ -26,5 +31,9 @@ class BudgetCubit extends Cubit<ViewEvent> {
     emit(BudgetLoadingEvent(isLoading: true));
     final result = await budgetUseCase.execute(carpet, side1, side2);
     emit(BudgetValueEvent(value: result));
+  }
+
+  void clearValue() {
+    emit(BudgetValueEvent(value: -1));
   }
 }

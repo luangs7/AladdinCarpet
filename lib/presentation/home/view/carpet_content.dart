@@ -1,5 +1,6 @@
 import 'package:alladin/common/components/button/custom_button.dart';
 import 'package:alladin/common/components/refreshbutton/refresh_button.dart';
+import 'package:alladin/presentation/budget/provider/budget_cubit.dart';
 import 'package:alladin/presentation/budget/view/budget_simulate_view.dart';
 import 'package:alladin/presentation/home/provider/home_cubit.dart';
 import 'package:alladin/presentation/home/states/home_states.dart';
@@ -70,7 +71,7 @@ class CarpetContentState extends State<CarpetContent> {
                     useSafeArea: true,
                     builder: (_) {
                       return BudgeSimulateView(widget.event.carpets);
-                    });
+                    }).then((value) => BudgetCubit.read(context).clearValue());
               },
             ),
             CustomButton(

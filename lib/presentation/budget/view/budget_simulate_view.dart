@@ -167,14 +167,13 @@ class BudgeSimulateViewState extends State<BudgeSimulateView> {
   void getValue({required BuildContext context}) {
     final sideOne = double.tryParse(side1.text) ?? 0;
     final sideTwo = double.tryParse(side2.text) ?? 0;
-    BlocProvider.of<BudgetCubit>(context)
-        .getValue(selectedShape!, sideOne, sideTwo);
+    BudgetCubit.read(context).getValue(selectedShape!, sideOne, sideTwo);
   }
 
   void save(BuildContext context) {
     final sideOne = double.tryParse(side1.text) ?? 0;
     final sideTwo = double.tryParse(side2.text) ?? 0;
-    BlocProvider.of<BudgetCubit>(context)
+    BudgetCubit.read(context)
         .save(selectedShape!, sideOne, sideTwo, totalValue);
   }
 
