@@ -26,3 +26,10 @@ Ao clicar em "Consultar Histórico", é possível ver uma listagem de orçamento
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
+## Licença
+
+[Inserir licença aqui, se aplicável]
+
+## Melhorias
+-   Extrair Strings para uma classe separada.
+-   AppLocalizations para deixar o app com multi linguagens.
