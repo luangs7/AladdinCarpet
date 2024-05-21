@@ -44,7 +44,7 @@ run-dev:
 
 .PHONY: run-prd
 run-prd: 
-	flutter run --release --flavor prod -t lib/core/environment/main_prod.dart
+	flutter run --flavor prod -t lib/core/environment/main_prod.dart
 
 .PHONY: run-mock
 run-mock: 
